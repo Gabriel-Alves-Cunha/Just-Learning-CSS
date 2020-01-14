@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Click And Hold Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h2>Click And Hold Effect</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At praesentium et non, illo quisquam pariatur omnis
+            est consectetur nesciunt qui quasi ad minima temporibus veritatis porro rerum, nemo repudiandae? Assumenda.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, repellendus, maiores error pariatur
+            quas consequatur ipsum rem earum eligendi perferendis natus quibusdam provident unde cupiditate molestias!
+            Sapiente assumenda officia mollitia! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure pariatur
+            mollitia asperiores excepturi amet, necessitatibus nostrum blanditiis, cum ullam repellat earum officia
+            tenetur consequatur quisquam laborum! Culpa voluptatem iste animi. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Illum ipsam, ut itaque assumenda voluptates neque in cupiditate, quas delectus rem quae
+            eius id quos aperiam rerum a. Est, neque. Veniam.</p>
+    </section>
+    <div id="cursor"></div>
+    <script type="text/javascript">
+        var cursor = document.getElementById('cursor');
+        window.onmousemove = function (e) {
+            var x = e.clientX,
+            y = e.clientY;
+            cursor.style.left = x + 'px';
+            cursor.style.top = y + 'px';
+        }
+    </script>
+</body>
+
+</html>

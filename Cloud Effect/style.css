@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: url(image2.jpg);
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.container img {
+    size: scale(0.001);
+}
+
+.container .cloud1 {
+    position: relative;
+    top: 60px;
+    animation: cloudOne infinite 30s linear;
+}
+
+.container .cloud2 {
+    position: relative;
+    top: -50px;
+    animation: cloudOne infinite 45s linear;
+}
+
+.container .cloud3 {
+    position: relative;
+    top: 0px;
+    animation: cloudOne infinite 15s linear;
+}
+
+.container .cloud4 {
+    position: relative;
+    top: 0px;
+    animation: cloudOne infinite 60s linear;
+}
+
+@keyframes cloudOne {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes cloudTwo {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes cloudThree {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes cloudFour {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}

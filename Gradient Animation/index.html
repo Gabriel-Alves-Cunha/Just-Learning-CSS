@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Gradient Animation</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                font-family: sans-serif;
+                font-weight: 400;
+                text-transform: uppercase;
+                text-align: center;
+                background-color: #fff;
+                font-size: 2em;
+            }
+
+            body {
+                background: linear-gradient(132deg, gold, blue);
+                background-size: 100vh;
+                animation: backgrad 5s ease infinite;
+            }
+
+            @keyframes backgrad {
+                0% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Gradient Animation</h1>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    </body>
+
+</html>
